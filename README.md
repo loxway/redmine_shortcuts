@@ -32,6 +32,5 @@ Just download the latest release of this plugin and extract in #{RAILS_ROOT}/plu
 ## Contributors
 * **[tofi86](https://github.com/tofi86)**
 
-
 ## License
 Released under the MIT License.

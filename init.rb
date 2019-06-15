@@ -5,6 +5,7 @@ Redmine::Plugin.register :redmine_shortcuts do
   author 'Davide Giacometti'
   description 'Provides useful keyboard shortcuts'
   version '0.2.0'
+
   url 'https://github.com/davidegiacometti/redmine_shortcuts'
   author_url 'https://github.com/davidegiacometti'
 

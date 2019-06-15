@@ -28,7 +28,11 @@ $(document).keydown(function(e) {
             } else if(e.keyCode == 13) {
                 $(document.activeElement).closest('form').submit();
                 e.preventDefault();
-            } // if-else
+            // CTRL+S+A
+            } else if(e.keyCode == 83 && e.keyCode == 65) {
+                $('#issue-form').submit();
+                e.preventDefault();
+            }
         } // if
     } // if
 });
