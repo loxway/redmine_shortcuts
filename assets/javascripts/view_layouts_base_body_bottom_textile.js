@@ -30,13 +30,12 @@ $(document).keydown(function(e) {
                 e.preventDefault();
             // CTRL/CMD + ENTER
             } else if(e.keyCode == 13) {
-                $(document.activeElement).closest('form').submit();
                 e.preventDefault();
-            // CTRL/CMD + S + A    
-            } else if(e.keyCode == 83 && e.keyCode == 65) {
-                $('#issue-form').submit();
-                e.preventDefault();
-            }
+                e.stopPropagation();
+                $('textarea').blur();
+                $('textarea').removeData('changed');
+                $('#issue-form').submit();    
+            } 
         } // if
     } // if
 });
